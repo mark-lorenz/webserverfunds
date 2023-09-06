@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>My New HTML Forms!</h2>
+    </body>
+
+    <form>
+        <H4>Fill out my survey plese it is for schol</h4>
+
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="fname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <fieldset>
+            <legend>Select your gender</legend>
+            <input type="radio" id="genderm" name="gender" value="genderm">
+            <label for="genderm">I am male <br>
+            <input type="radio" id="genderf" name="gender" value="genderf">
+            <label for="genderf">I am female</label> <br>
+            <input type="radio" id="genderw" name="gender" value="genderw">
+            <label for="genderf">I am confused</label>
+            <input type="checkbox" id="help" name="help" value="help">
+            <label for="help">(Optional) send help</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Enter your favorite sentence ever</legend>
+            <textarea name="message" rows="4" cols="30">
+            </textarea>
+        </fieldset><br>
+
+        <button type="button" onclick="alert('why did you click')">Don't click</button><br>
+        
+
+        <br><br><input type="submit" value="I will give you my info">
+        
+    </form>
+</html>
