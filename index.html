@@ -81,25 +81,20 @@
         <br><br><br>
 
 
-        <!-- task 2.2 AJAX 
-        <div id="message">
+        <!-- task 2.2 AJAX -->
         <h2>AJAX Section</h2>
-        <button type="button" onclick="loadDoc()">Show Message</button>
-        </div>
+        <button type="button" onclick="loadDoc()">Request data</button>
+
+        <p id="demo"></p>
 
         <script>
             function loadDoc() {
-                const xhttp = new XMLHttpRequest();
-                xhttp.onload = function() {
-                    document.getElementById("message").innerHTML = 
-                    this.responseText;
-                }
-
-                xhttp.open("GET", "some-text.txt", true);
-                xhttp.send();
+              var xhttp = new XMLHttpRequest();
+              xhttp.open("GET", "someText.txt", true);
+              xhttp.send();
+              document.getElementById("demo").innerHTML = xhttp.responseText;
             }
         </script>
-        -->
-        
+
     </body>
 </html>
