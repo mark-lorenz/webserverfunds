@@ -10,7 +10,7 @@
             <p><i>One of these days this will be a proper description</i></p>
         </div>
         
-        <h3>LIST OF RANDOM CLICKABLE LINKS</h3>
+        <h3>LIST OF CLICKABLE LINKS</h3>
             <ul>
                 <li><a href="https://www.google.ca" target="_blank">FIRST LINK</a></li>
                 <li><u><font color="#4287f5">NOT A REAL LINK</p></font></u></li>
@@ -64,6 +64,7 @@
         </script>
         <br>
 
+
         <!-- task 2.1.5 -->
         <img id="pet" src="plonk.gif"><br>
         <button onclick="document.getElementById('pet').src='dog-arrives.gif'">I want a dog</button>
@@ -77,7 +78,28 @@
                 id.innerHTML = "It has changed";
             }
         </script>
+        <br><br><br>
 
+
+        <!-- task 2.2 AJAX 
+        <div id="message">
+        <h2>AJAX Section</h2>
+        <button type="button" onclick="loadDoc()">Show Message</button>
+        </div>
+
+        <script>
+            function loadDoc() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("message").innerHTML = 
+                    this.responseText;
+                }
+
+                xhttp.open("GET", "some-text.txt", true);
+                xhttp.send();
+            }
+        </script>
+        -->
+        
     </body>
-
 </html>
