@@ -13,11 +13,11 @@
 
             div {
                 width: 450px;
-                margin: 20px;
+                margin: 10px;
 
                 border: 2px black;
                 background: linear-gradient(to top, #66B2FF, #CCE5FF);
-                padding-top: 10px;
+                padding-top: 1px;
                 padding-bottom: 10px;
                 padding-right: 10px;
                 padding-left: 10px;
@@ -26,7 +26,11 @@
     </head>
 
     <body>
-        <p><?= var_dump($_SERVER) ?></p>
+        <div>
+            <p><b> Welcome, you are using </b></p>
+            <?php echo $_SERVER['HTTP_USER_AGENT']; ?> 
+        </div>
+
         <div>
             <h1>Website in construction</h1>
                 <p><i>One of these days this will be a proper description</i></p>
