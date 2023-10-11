@@ -5,13 +5,10 @@
     </head>
 
     <body>
-        Your name is: <?php echo $_GET["full_name"]; ?> <br>
-        <p>You are: <?= htmlspecialchars($_GET['age']) . " years old"?></p>
-
-        Welcome <?php echo $_GET["full_name"]; ?>.
-
-        <p><?= var_dump($_GET) ?></p>
-        <p><?= var_dump($_POST) ?></p>
+        <h1>Submitted Form Answers</h1>
+        Welcome <?php echo htmlspecialchars($_POST["full_name"]) ?>, how are you today?
+        You are <?= htmlspecialchars($_POST['age']) ?> years old 
+        and your favorite transportation method is <?= htmlspecialchars($_POST['transport']) ?>.
     </body>
 
 </html>
