@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>index.html</title> 
+        <title>Mark's index</title> 
         
         <style>
             body {
                 background-color: black;
-                background-image: url('background-img4.jpg');
+                background-image: url('/images/background-img4.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
             }
 
             div {
-                width: 450px;
+                width: 600px;
                 margin: 10px;
 
                 border: 2px black;
                 background: linear-gradient(to top, #66B2FF, #CCE5FF);
                 padding-top: 1px;
-                padding-bottom: 10px;
+                padding-bottom: 1px;
                 padding-right: 10px;
                 padding-left: 10px;
             }
@@ -27,8 +27,11 @@
 
     <body>
         <div>
-            <p><b> Welcome, you are using </b></p>
+            <p><h1><b> Welcome, you are using </b></h1></p>
             <?php echo $_SERVER['HTTP_USER_AGENT']; ?> 
+            <p id="nerdge">
+                <img src="/images/Nerdge.png" width="50">
+            </p>
         </div>
 
         <div>
@@ -40,7 +43,7 @@
                     <li><a href="https://www.google.ca" target="_blank">FIRST LINK</a></li>
                     <li><u><font color="#4287f5">NOT A REAL LINK</p></font></u></li>
                     <li><a href="form.php" target="_self">Forms page</a>
-                    <li><a href="quiet.html" target="_blank">Empty page</a></li>
+                    <li><a href="/sql/sqlCourselist.php" target="_self">SQL test page</a></li>
                 </ul>
             <br>
         </div>
@@ -77,7 +80,7 @@
             <button onclick="showCat()">Hide this cat</button>
 
             <p id="image">
-                <img src="plink.gif">
+                <img src="/images/plink.gif">
             </p>
 
             <script>
@@ -94,8 +97,8 @@
 
 
             <!-- task 2.1.5 -->
-            <img id="pet" src="plonk.gif"><br>
-            <button onclick="document.getElementById('pet').src='dog-arrives.gif'">I want a dog</button>
+            <img id="pet" src="/images/plonk.gif"><br>
+            <button onclick="document.getElementById('pet').src='/images/dog-arrives.gif'">I want a dog</button>
             <br><br><br>
 
             <!-- task 2.1.6 -->
